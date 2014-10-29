@@ -1,0 +1,32 @@
+'.source.js.impact':
+  'Module Definition':
+    'prefix': 'igm'
+    'body': '''ig.module(
+  'game.${1:moduleName}'
+)
+${3:.requires(
+  $2
+)}
+.defines(function() {
+  'use strict';
+
+  $0
+});'''
+  'Entity Definition':
+    'prefix': 'ige'
+    'body': '''ig.module(
+  'game.entities.${1:moduleName}'
+)
+.requires(
+  'impact.entity'
+)
+.defines(function() {
+  'use strict';
+
+  window.Entity${1/^(.)/\U\1/} = ig.Entity.extend({
+    ${2:init: function(x, y, settings) {
+      this.parent(x, y, settings);
+      $0
+    }}
+  });
+});'''

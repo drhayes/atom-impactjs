@@ -1,0 +1,59 @@
+'name': 'ImpactJS',
+'scopeName': 'source.js.impact',
+'patterns': [
+{
+  'match': '(ig)\\.(module)\\(',
+  'captures': {
+    '1': {
+      'name': 'support.variable.impact.namespace'
+    },
+    '2': {
+      'name': 'support.function.impact'
+    }
+  }
+},
+{
+  'match': '\\b((ig)\\.(KEY)\\.([a-zA-Z0-9_]*))\\b',
+  'captures': {
+    '1': {
+      'name': 'support.constant.impact.keys'
+    },
+    '2': {
+      'name': 'support.variable.impact.namespace'
+    },
+    '3': {
+      'name': 'support.constant.impact'
+    },
+    '4': {
+      'name': 'support.constant.impact'
+    }
+  }
+},
+{
+  'match': '\\.(requires|defines|extend)\\(',
+  'captures': {
+    '1': {
+      'name': 'support.function.impact'
+    }
+  }
+},
+{
+  'match': '\\b(ig)\\b',
+  'captures': {
+    '1': {
+      'name': 'support.variable.impact.namespace'
+    }
+  }
+},
+{
+  'match': '\\b(Entity[a-zA-Z0-9]+)\\b',
+  'captures': {
+    '1': {
+      'name': 'entity.name.type.impact.entity'
+    }
+  }
+},
+{
+  'include': 'source.js'
+}
+]
