@@ -1,0 +1,10 @@
+{
+  "name": "atom-impactjs",
+  "version": "0.0.0",
+  "description": "An ImpactJS package for the Atom editor.",
+  "keywords": ["impactjs", "atom"],
+  "bugs": "https://github.com/drhayes/atom-impactjs/issues",
+  "license": "MIT",
+  "author": "David Hayes <drhayes@gmail.com> (http://drhayes.io)",
+  "main": "index.coffee"
+}
