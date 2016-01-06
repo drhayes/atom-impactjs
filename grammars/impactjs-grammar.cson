@@ -1,7 +1,6 @@
 'name': 'ImpactJS',
 'scopeName': 'source.js.impact',
-'patterns': [
-{
+'patterns': [{
   'match': '(ig)\\.(module)\\(',
   'captures': {
     '1': {
@@ -55,5 +54,4 @@
 },
 {
   'include': 'source.js'
-}
-]
+}]
